@@ -1,0 +1,94 @@
+/*!
+ * Drinks - The web app
+ *
+ * @version v1.0.0
+ * @author 2023 ImAliTavakoli. All Rights Reserved.
+ */
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Basics
+
+@import 'variables';
+@import 'root';
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Resets
+
+@import 'base';
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Theme
+
+.m--theme-dark {
+  --m-headings-color: #fff;
+  --m-text-color: #eee;
+  --m-bg-color: #333;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// F8
+
+@import '~@/assets/framework8/1.3.0/blocks/variables';
+@import '~@/assets/framework8/1.3.0/blocks/root';
+@import '~@/assets/framework8/1.3.0/blocks/mixins';
+
+@import '~@/assets/framework8/1.3.0/blocks/utils/utils';
+@import '~@/assets/framework8/1.3.0/blocks/grid/grid';
+@import '~@/assets/framework8/1.3.0/blocks/card/card';
+@import '~@/assets/framework8/1.3.0/blocks/button/button';
+@import '~@/assets/framework8/1.3.0/blocks/switch-daylight/switch-daylight';
+
+
+/// Overrides
+:root {
+  --f8-blocks-def-text-color:         #{$m-text-color};
+
+  --f8-blocks-primary-color:          #{$m-color-green};
+  --f8-blocks-accent-color:           #{$m-color-yellow};
+  --f8-blocks-greenish-color:         #{$m-color-green};
+  --f8-blocks-reddish-color:          #{$m-color-red};
+  --f8-blocks-yellowish-color:        #{$m-color-yellow};
+  --f8-blocks-bluish-color:           #{$m-color-blue};
+
+  --f8-blocks-primary-2-color:        #{darken($m-color-green, 10%)};
+  --f8-blocks-accent-2-color:         #{darken($m-color-yellow, 10%)};
+  --f8-blocks-greenish-2-color:       #{darken($m-color-green, 10%)};
+  --f8-blocks-reddish-2-color:        #{darken($m-color-red, 10%)};
+  --f8-blocks-yellowish-2-color:      #{darken($m-color-yellow, 10%)};
+  --f8-blocks-bluish-2-color:         #{darken($m-color-blue, 10%)};
+
+  --f8-blocks-primary-alpha-color:    #{rgba($m-color-green, .3)};
+  --f8-blocks-accent-alpha-color:     #{rgba($m-color-yellow, .3)};
+  --f8-blocks-greenish-alpha-color:   #{rgba($m-color-green, .3)};
+  --f8-blocks-reddish-alpha-color:    #{rgba($m-color-red, .3)};
+  --f8-blocks-yellowish-alpha-color:  #{rgba($m-color-yellow, .3)};
+  --f8-blocks-bluish-alpha-color:     #{rgba($m-color-blue, .3)};
+
+  --f8-blocks-font-size:              #{$m-font-size};               // Base of font sizes. Other font sizes (such as font sizes for small or large sized blocks) will be set according to this.
+
+  --f8-blocks-spacer:                 #{$m-spacer};                  // Base of margins & paddings. Other spaces (such as spaces for small or large sized blocks) will be set according to this.
+}

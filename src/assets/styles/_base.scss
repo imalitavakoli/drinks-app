@@ -1,0 +1,124 @@
+// Base - Normalize and default styles.
+// @author 2023 ImAliTavakoli. All Rights Reserved.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Main
+
+::selection {
+  text-shadow: none;
+  background: $m-selection-bg-color;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;                                      // Change from `box-sizing: content-box` so that `width` is not affected by `padding` or `border`.
+}
+
+html {
+  font-family: sans-serif;                                     // Change the default font family in all browsers.
+  font-size: $m-font-size;                                     // NOTE: rem units are based on the font-size of the html element; so that's why we set our app's desired font-size for the html element here.
+  line-height: 1.15;                                           // Correct the line height in all browsers.
+  -webkit-text-size-adjust: 100%;                              // Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);             // Change the default tap highlight to be completely transparent in iOS.
+}
+
+body {
+  margin: 0;                                                   // Remove the margin in all browsers.
+
+  color: $m-text-color;
+  font-family: $m-font-family;
+  font-size: $m-font-size;
+  line-height: $m-line-height-base;
+  -webkit-font-smoothing: antialiased;                         // WebKit browsers
+  text-rendering: optimizeLegibility;                          // Safari and Chrome
+  -moz-osx-font-smoothing: grayscale;                          // Firefox
+  font-feature-settings: 'liga';                               // IE
+
+  background-color: $m-bg-color;
+
+  overflow-y: scroll;                                          // Always show the scrollbar
+}
+
+a {
+  color: $m-text-link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border-color: transparent;
+  border-top: 1px solid $m-color-neutral-hr;
+  border-bottom: none;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: calc(#{$m-spacer} * 2);
+  margin-bottom: $m-spacer;
+
+  color: $m-headings-color;
+
+  font-family: $m-headings-font-family;
+  font-weight: $m-headings-font-weight;
+  line-height: $m-headings-line-height;
+}
+
+h1 { font-size: $m-font-size-h1; }
+h2 { font-size: $m-font-size-h2; }
+h3 { font-size: $m-font-size-h3; }
+h4 { font-size: $m-font-size-h4; }
+h5 { font-size: $m-font-size-h5; }
+h6 { font-size: $m-font-size-h6; }
+
+p {
+  margin: 0 0 $m-spacer;
+
+  font-family: $m-font-family;
+  font-size: $m-font-size;
+  line-height: $m-line-height-base;
+}
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// No Animation
+
+@media screen and (prefers-reduced-motion: reduce){
+  *,
+  *::after,
+  *::before {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration:  0.001ms !important;
+    transition-delay: 0 !important;
+  }
+}

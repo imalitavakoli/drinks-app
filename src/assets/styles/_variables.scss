@@ -1,0 +1,136 @@
+// Variables - Basic settings.
+// @author 2023 ImAliTavakoli. All Rights Reserved.
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Color
+
+// Var Sets
+$m-color-white:                                       #fff !default;
+$m-color-black:                                       #333 !default;
+$m-color-blue:                                        #1cafbf !default;
+$m-color-yellow:                                      #ff7745 !default;
+$m-color-green:                                       #04a697 !default;
+$m-color-red:                                         #bc4436 !default;
+
+$m-color-neutral:                                     #888 !default;
+$m-color-neutral-bg:                                  rgba(136, 136, 136, 0.2) !default;
+$m-color-neutral-hr:                                  rgba(136, 136, 136, 0.4) !default;
+
+
+// Root Bases
+$m-selection-bg-color-base:                           rgba(136, 136, 136, 0.2);
+
+$m-headings-color-base:                               #000;
+$m-text-color-base:                                   #333;
+$m-text-link-color-base:                              $m-color-green;
+
+$m-bg-color-base:                                     $m-color-white;
+
+
+// Usefuls
+$m-selection-bg-color:                                var(--m-selection-bg-color) !default;
+
+$m-headings-color:                                    var(--m-headings-color) !default;
+$m-text-color:                                        var(--m-text-color) !default;
+$m-text-link-color:                                   var(--m-text-link-color) !default;
+
+$m-bg-color:                                          var(--m-bg-color) !default;
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Typography
+
+// Var Sets
+$m-font-family-sans-serif:                            'Roboto', Arial, sans-serif !default;
+$m-font-family-serif:                                 Georgia, 'Times New Roman', Times, serif !default;
+$m-font-family-monospace:                             Menlo, Monaco, Consolas, "Courier New", monospace !default; // Fonts for `<code>`, `<kbd>`, and `<pre>`.
+
+$m-headings-font-weight:                              500 !default;
+$m-headings-line-height:                              1.2 !default;
+
+$m-font-size-lg:                                      1.25rem !default;
+$m-font-size-sm:                                      .85rem !default;
+
+$m-font-size-h1:                                      2.5rem !default;      // ~41px
+$m-font-size-h2:                                      1.5rem !default;      // ~24px
+$m-font-size-h3:                                      1.25rem !default;     // ~20px
+$m-font-size-h4:                                      1.125rem !default;    // ~18px
+$m-font-size-h5:                                      1rem !default;
+$m-font-size-h6:                                      .85rem !default;      // ~14px
+
+
+// Root Bases
+$m-headings-font-family-base:                         'Roboto Condensed', Arial, sans-serif !default;
+
+$m-font-family-base:                                  $m-font-family-sans-serif !default;
+$m-font-size-base:                                    16px !default; // We don't set `font-size` to `1rem` and assume the browser's default `font-size` is `16px`! We force it to be `16px` for our styles.
+
+$m-line-height-base:                                  1.5 !default;
+
+
+// Usefuls
+$m-headings-font-family:                              var(--m-headings-font-family) !default;
+
+$m-font-family:                                       var(--m-font-family) !default;
+$m-font-size:                                         var(--m-font-size) !default;
+
+$m-line-height:                                       var(--m-line-height) !default;
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Spacing
+
+// Root Bases
+$m-spacer-base:                                       1rem !default;
+
+
+// Usefuls
+$m-spacer:                                            var(--m-spacer) !default;
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Misc
+
+// Var Sets
+$m-border-radius:                                     4px !default;
+$m-transition-duration:                               .3s !default;
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+/// Media queries breakpoints
+
+// Var Sets
+$m-screen-sm-min:                                     576px !default;
+$m-screen-md-min:                                     768px !default;
+$m-screen-lg-min:                                     992px !default;
+$m-screen-xl-min:                                     1200px !default;
+
+$m-screen-sm-max:                                     ($m-screen-md-min - 1) !default;
+$m-screen-md-max:                                     ($m-screen-lg-min - 1) !default;
+$m-screen-lg-max:                                     ($m-screen-xl-min - 1) !default;
