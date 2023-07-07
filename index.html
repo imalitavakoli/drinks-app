@@ -1,0 +1,46 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="favicon.ico"><![endif]--><title>Drinks Demo App</title><link rel="icon" href="favicon.ico"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet"><style media="screen">.as-loader {
+        --as-loader-color: #333;
+        --as-bg-color: #eee;
+      }
+      .as-loader {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--as-bg-color);
+        z-index: 3000;
+        transition: visibility .4s, opacity .4s;
+      }
+      .as-loader--loaded {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .as-loader__preloader {
+        min-width: 100px;
+        min-height: 100px;
+        color: var(--as-loader-color);
+        user-select: none;
+        pointer-events: none;
+      }
+      .as-loader__preloader svg path,
+      .as-loader__preloader svg rect,
+      .as-loader__preloader svg circle {
+        fill: var(--as-loader-color);
+      }
+      .as-loader__preloader svg {
+        animation: spin-preloader 1.5s linear infinite;
+      }
+      @keyframes spin-preloader {
+        100% {
+          transform:rotate(360deg);
+        }
+      }</style><script>window.addEventListener('load', function() {
+        setTimeout(function () {
+          document.getElementById('loader').classList.add('as-loader--loaded');
+        }, 300);
+      });</script><script defer="defer" src="js/chunk-vendors.2acb14af.js"></script><script defer="defer" src="js/app.93484917.js"></script><link href="css/app.ddaad4a4.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="img/icons/favicon-16x16.png"><link rel="manifest" href="manifest.json"><meta name="theme-color" content="#445859"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="drinks-app"><meta name="msapplication-TileColor" content="#000000"></head><body><noscript style="position: relative; z-index: 3001;"><strong>We're sorry but drinks-app doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div class="as-loader" id="loader"><div class="as-loader__holder"><div class="as-loader__preloader"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 100 100" style="stroke: none;"><path d="M73,50c0-12.7-10.3-23-23-23S27,37.3,27,50 M30.9,50c0-10.5,8.5-19.1,19.1-19.1S69.1,39.5,69.1,50"></path></svg></div></div></div><div id="app"></div><script src="js/jquery.min.js?1688712260454"></script></body></html>
