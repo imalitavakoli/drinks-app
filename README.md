@@ -1,8 +1,8 @@
-The "**Drinks Demo App**" is a sample SPA web application that shows you awesome alcoholic drinks!
+The "**Drinks Demo App**" is a sample SPA (Single Page Application) that shows you awesome alcoholic drinks!
 
 [Preview the app here](https://imalitavakoli.github.io/drinks-app/).
 
-*Drinks Demo App* is just an other sample SPA web app that I have built by `Vue.js`, `jQuery`, and `Framework8` (my personal Front-end Framework). It connects to the [thecocktaildb.com](https://www.thecocktaildb.com/api.php) API and loads the alcoholic drinks.
+*Drinks Demo App* is just another SPA that I have built by `Vue.js`, `jQuery`, and `Framework8` (my personal Front-end Framework). It connects to the [thecocktaildb.com](https://www.thecocktaildb.com/api.php) API and loads the alcoholic drinks.
 
 
 
@@ -18,6 +18,7 @@ The "**Drinks Demo App**" is a sample SPA web application that shows you awesome
 - 404 page is built in.
 - Loading and error states are considered, while connecting to API.
 - Cleaning the API JSON response, when providing it to the HTML templates.
+- **PWA ready**.
 - Comments everywhere inside of the codes.
 - Designed a pre-loader as an app-shell.
 - **Light/dark mode switch**. User's preferred theme will be saved for next visits. By default, it first looks at the theme mode preference at the OS level.
@@ -30,8 +31,9 @@ The "**Drinks Demo App**" is a sample SPA web application that shows you awesome
 
 # Folders structure
 
-Everything starts from `public/index.html`. And this file loads our *Vue.js* app which is the `src/main.js` file!
-Actually the whole app's structure is based on the recommendations of the *Vue.js* framework which can be created via the `vue create project-name` command that runs by *Vue CLI*.
+Everything starts from `public/index.html`. And this file loads our *Vue.js* app which is the `src/main.js` file!  
+Actually the whole app's structure is based on the recommendations of the *Vue.js* framework which can be created via the `vue create project-name` command that can be run by *Vue CLI*.  
+And the final build of the app for production can be generated via the `npm run build` command in the `dist/` directory.
 
 **Note!** Below I have drawn only the map of important files and directories.
 
