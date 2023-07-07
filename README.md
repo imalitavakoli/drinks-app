@@ -29,6 +29,12 @@ The "**Drinks Demo App**" is a sample SPA (Single Page Application) that shows y
 
 
 
+# Improvments
+There's no end to the things that we make in this world... Actually **the sky's the limit.**! Because the more you discover, learn, and build, the more things get created out of your awareness... But anyway, enough philosophy! Let's just see how could we improve this demo app a little bit more! Shall we? Well, we could setup a pagination on the front code for the first page (even at the times that API doesn't give us the pagination option, paginations can still improve user-experience), we could have a "Go to Up" button when user scrolls down a lot, we could have more fancy effects for our cards or hyperlinks, and we could re-factor our code a little bit more... 
+
+
+
+
 # Folders structure
 
 Everything starts from `public/index.html`. And this file loads our *Vue.js* app which is the `src/main.js` file!  

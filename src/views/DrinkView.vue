@@ -74,6 +74,11 @@
 
   </section>
 
+
+
+
+  <Footer/>
+  
 </div>
 </template>
 
@@ -95,6 +100,7 @@
 import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
 import Header from '@/components/Header.vue'
+import Footer from '@/components/Footer.vue'
 
 export default {
 
@@ -106,6 +112,7 @@ export default {
 
   components: {
     Header,
+    Footer,
   },
 
 

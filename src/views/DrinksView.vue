@@ -25,12 +25,11 @@
     </blockquote>
   </section>
 
-  <hr>
-
 
 
 
   <section class="g8-container">
+    <hr>
 
     <!-- Loading Message
     ============================================= -->
@@ -97,6 +96,11 @@
 
   </section>
 
+
+
+
+  <Footer/>
+
 </div>
 </template>
 
@@ -119,6 +123,7 @@ import { mapState, mapGetters, mapMutations, mapActions } from 'vuex'
 
 import Header from '@/components/Header.vue'
 import Card from '@/components/Card.vue'
+import Footer from '@/components/Footer.vue'
 
 
 export default {
@@ -132,6 +137,7 @@ export default {
   components: {
     Header,
     Card,
+    Footer,
   },
 
   
