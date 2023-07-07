@@ -6,7 +6,10 @@ module.exports = defineConfig({
   transpileDependencies: true,
   pwa: {
     workboxPluginMode: 'GenerateSW',
-    themeColor: '#445859',
+    themeColor: '#04a697',
+    manifestOptions: {
+      start_url: 'https://imalitavakoli.github.io/drinks-app/'
+    },
     iconPaths: {
       faviconSVG: null,
       favicon32: 'img/icons/favicon-32x32.png',
