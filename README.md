@@ -28,6 +28,50 @@ The "**Drinks Demo App**" is a sample SPA web application that shows you awesome
 
 
 
+# Folders structure
+
+Everything starts from `public/index.html`. And this file loads our *Vue.js* app which is the `src/main.js` file!
+Actually the whole app's structure is based on the recommendations of the *Vue.js* framework which can be created via the `vue create project-name` command that runs by *Vue CLI*.
+
+**Note!** Below I have drawn only the map of important files and directories.
+
+```
+public/
+├── img/
+├── js/
+│   └── jquery.min.js
+└── index.html
+
+src/
+├── api/
+│   └── drinks.js
+├── assets/
+│   ├── framework8/
+│   ├── scripts/
+│   │   ├── base.js
+│   │   └── index.js
+│   └── styles/
+│       ├── _base.scss
+│       ├── _root.scss
+│       ├── _variables.scss
+│       └── index.scss
+├── components/
+│   ├── Card.vue
+│   └── Header.vue
+├── router/
+│   └── index.js
+├── store/
+│   ├── modules/
+│   │   └── drinks.js
+│   └── index.js
+├── views/
+│   ├── DrinksView.vue
+│   ├── DrinkView.vue
+│   └── NotFoundView.vue
+├── App.vue
+└── main.js
+```
+
 # How to compile
 
 Well, you can run the project on your machine, and start modifying the codes!
