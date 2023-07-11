@@ -12,7 +12,6 @@
 
   <footer class="u8-my-lg u8-opacity-base">
     Copyrights &copy; {{ new Date().getFullYear() }} All Rights Reserved by ImAliTavakoli
-    {{ console.log('dd') }}
   </footer>
 
 </div>

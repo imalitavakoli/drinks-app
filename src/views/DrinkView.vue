@@ -39,6 +39,8 @@
         </div>
       </template>
 
+      <!-- Drink Info
+      ============================================= -->
       <template v-else>
         <div class="g8-row">
           <div class="g8-col-md-4">
